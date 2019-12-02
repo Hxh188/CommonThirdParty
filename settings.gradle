@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':bugly_lib'
 rootProject.name='CommonThirdParty'

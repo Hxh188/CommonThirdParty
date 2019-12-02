@@ -1,0 +1,13 @@
+混淆配置：
+-dontwarn com.tencent.bugly.**
+-keep public class com.tencent.bugly.**{*;}
+
+符号表上传配置
+项目根目录添加classpath ->
+classpath 'com.tencent.bugly:symtabfileuploader:latest.release'
+app module下 ->
+apply plugin: 'bugly'
+bugly {
+    appId = '5c7e0eed7d' // 注册时分配的App ID
+    appKey = 'a1d653a0-73ea-41d0-aa50-2a880078e1e7' // 注册时分配的App Key
+}
